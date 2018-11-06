@@ -195,6 +195,9 @@ class App extends Component {
 						<Typography variant="title" align="center" gutterBottom>
 							Language Trainer
 						</Typography>
+						<hr />
+						<br />
+
 						<form className={classes.root} autoComplete="off">
 							<FormControl className={classes.answerEntry}>
 								<InputLabel htmlFor="language-select">Language</InputLabel>
@@ -217,18 +220,28 @@ class App extends Component {
 								</Select>
 							</FormControl>
 						</form>
+						<br />
+						<hr />
+						<br />
 						<Typography variant="subheading" align="center">
 							Word Detected
 						</Typography>
 						<Typography variant="body1" align="center" gutterBottom>
 							{this.state.wordIdentified}
 						</Typography>
+						<br />
+
 						<Typography variant="subheading" align="center">
 							Answer (hover)
 						</Typography>
 						<Typography variant="body1" align="center" id="blur">
 							{this.state.wordTranslated}
 						</Typography>
+						<br />
+
+						<hr />
+						<br />
+
 						<TextField
 							className={classes.answerEntry}
 							label="Answer"
